@@ -46,7 +46,7 @@ Console.WriteLine();
 
 
 
-// Метод заполнения массива с определенным размеров элементов
+// Метод формирования и заполнения массива элементами заданного размера
 
 string[] FillingArrayWithGivenElementSize(string[] arrayFirst, int limitingValue)
 {

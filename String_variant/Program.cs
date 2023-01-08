@@ -32,17 +32,10 @@ string[] desiredArray = FillingArrayWithGivenElementSize(arrayFirst, limitingVal
 
 Console.WriteLine();
 
-if (desiredArray.Length == 0)
-{
-    Console.WriteLine("В новом массиве отсутствуют элементы.");
-}
-else
-{
-    Console.WriteLine("Новый массив, состоящий из элементов, удовлетворяющих заданному ограничению, выглядит следующим образом:");
-    PrintArray(desiredArray);
-}
+IssuanceOfResults(desiredArray);
 
 Console.WriteLine();
+
 
 
 
@@ -88,6 +81,23 @@ string[] FillingArrayWithGivenElementSize(string[] arrayFirst, int limitingValue
 
 
 
+// Метод выдачи результатов работы программы
+
+void IssuanceOfResults(string[] desiredArray)
+{
+    if (desiredArray.Length == 0)
+    {
+        Console.WriteLine("В исходном массиве отсутствуют элементы, удовлетворяющие заданному ограничению.");
+    }
+    else
+    {
+        Console.WriteLine("Новый массив, состоящий из элементов, удовлетворяющих заданному ограничению, выглядит следующим образом:");
+        PrintArray(desiredArray);
+    }
+}
+
+
+
 // Метод для приема чисел, вводимых через консоль
 
 int InputInt()
@@ -107,7 +117,7 @@ int InputInt()
 
 
 
-//метод заполнения массива значениями, вводимыми через консоль
+// Метод заполнения массива значениями, вводимыми через консоль
 
 string[] FillArray(string[] arr)
 {
